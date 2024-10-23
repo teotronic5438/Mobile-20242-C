@@ -1,0 +1,10 @@
+package ar.edu.angulos
+
+import retrofit2.Call
+import retrofit2.http.GET
+
+interface ApiService {
+
+    @GET("fact")
+    fun getFact(): Call<FactResponse>
+}
